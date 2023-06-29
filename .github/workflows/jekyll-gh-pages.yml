@@ -33,10 +33,13 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: docs/
+          source: ./docs/
           destination: ./_site
+          verbose: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./_site
 
   # Deployment job
   deploy:
