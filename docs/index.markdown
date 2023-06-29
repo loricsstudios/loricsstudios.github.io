@@ -4,3 +4,10 @@
 
 layout: default
 ---
+
+# My title
+
+my article
+
+* my list item 1
+* my list item 2
