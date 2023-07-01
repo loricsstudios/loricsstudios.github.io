@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<h1>My Paginated Table</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Title</th>
+      <th>Published at</th>
+      <th>Description</th>
+      <!-- Add more column headers as needed -->
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in site.data.data %}
+    <tr>
+      <td style="width: 200px;"><a href="https://www.youtube.com/watch?v={{ item.id }}"><img src="{{ item.d_thumbnail }}" width="120px" height="90px"/></a></td>
+      <td>{{ item.title }}</td>
+      <td>{{ item.published_at }}</td>
+      <td>{{ item.description }}</td>
+      <!-- Add more table cells for each column as needed -->
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
