@@ -11,3 +11,8 @@ my article
 
 * my list item 1
 * my list item 2
+* my list item 3
+
+1. numbered list
+1. second fiddle
+1. third fiddle
