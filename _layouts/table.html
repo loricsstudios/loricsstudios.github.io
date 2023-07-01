@@ -17,7 +17,7 @@ layout: default
   <tbody>
     {% for item in site.data.data %}
     <tr>
-      <td style="width: 200px;"><a href="https://www.youtube.com/watch?v={{ item.id }}"><img src="{{ item.d_thumbnail }}" width="120px" height="90px"/></a></td>
+      <td style="min-width:120px"><a href="https://www.youtube.com/watch?v={{ item.id }}"><img src="{{ item.d_thumbnail }}" width="120px" height="90px"/></a></td>
       <td>{{ item.title }}</td>
       <td>{{ item.published_at }}</td>
       <td>{{ item.description }}</td>

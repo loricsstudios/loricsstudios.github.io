@@ -1,4 +1,9 @@
-// assets/css/main.scss
+---
+---
 
-// Import custom styles
-@import "custom";
+@import "minima";
+
+.wrapper {
+    max-width: 70%;
+    // background-color: yellow;
+}
